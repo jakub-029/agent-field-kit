@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read", "Grep", "Glob",
+      "Edit(src/**)", "Write(src/**)", "Edit(tests/**)", "Write(tests/**)",
+      "Bash(npm test*)", "Bash(npm run lint*)", "Bash(npm run build*)",
+      "Bash(git status*)", "Bash(git diff*)", "Bash(git log*)"
+    ],
+    "deny": [
+      "Edit(.env*)", "Read(.env*)", "Edit(**/migrations/**)",
+      "Bash(curl*)", "Bash(wget*)"
+    ]
+  }
+}
